@@ -1,0 +1,7 @@
+import pandas as pd
+data = pd.read_csv('1-2.csv', encoding = "ISO-8859-1", sep=';')
+data.head().T
+del data['Client']
+del data['Department']
+del data['Manager']
+del data['Service']
